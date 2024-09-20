@@ -1,0 +1,26 @@
+1. navbar- (middle menu is not required) icon and button with icon
+2. banner- background image above background: heading, p, and link . Clicking
+        button will navigate user to PH paribahan section.
+
+3. Optional-(3 card below banner).
+4 Best offer for you: Coupon code generate. See all button below two coupon card.
+5. Hard(P.H paribahan section) design like figma.
+
+    title & details
+    logo with bus company name
+    available seat
+    route static
+    departure time
+    others is static
+    right section: price section
+    left section:
+        select your seat icon will be gray
+        show total available seat green
+    right section:
+        when click to a seat on the left it will add a seat in the right section also.
+        seat background will be green and text in white
+        right side seat count will be increase
+        available seat will be decrease
+        total price calculation
+        challenge part: coupon input section add and apply button(button is disable by default).
+          
