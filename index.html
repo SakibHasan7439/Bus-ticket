@@ -18,29 +18,6 @@
     <!-- tailwind-and-daisyUi-cdn-link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-
-    <script>
-        module.exports = {
-        theme: {
-            extend: {
-                color: {
-                    primary: '#1dd100',
-                    secondary: '#030712',
-                    couponOne: '#ffbf0f',
-                    couponTwo: '#f78c9c',
-                    mobileMenu: '#f7f8f8',
-                    body: '#03071299',
-                    buttonColor: 'rgba(29, 209, 0, 0.15)',
-                },
-
-                fontFamily: {
-                Raleway: ['Raleway', 'sans-serif'],
-                Inter: ['Inter', 'sans-serif'],
-                },
-            }
-        },
-    }
-    </script>
 </head>
 <body>
     <header class="max-w-7xl mx-auto mb-6">
@@ -77,7 +54,9 @@
                     <p class="text-white pb-6">
                         Yes, you can run unit tests and view the results directly within the app.
                     </p>
-                    <button class="bg-green-400 font-bold rounded-md absolute left-[35%] py-3 px-6"><a href="#paribahan-section">Buy Tickets</a></button>
+                    <a href="#paribahan-section">
+                        <button class="bg-green-400 font-bold rounded-md absolute left-[35%] py-3 px-6">Buy Tickets</button>
+                    </a>
                 </div>
             </div>
 
@@ -155,6 +134,275 @@
           </div>
 
           <!-- PH paribahan section -->
+          <div class="max-w-7xl mx-auto mb-16">
+            <div id="paribahan-section" class="border-t p-24 bg-[#F7F8F8] rounded-[60px] border-green-400">
+                <h3 class="text-3xl text-center font-bold pb-6">PH Paribahan</h3>
+                <p class="w-[50%] mx-auto text-center pb-8">
+                    Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+                </p>
+
+                <!-- Company info -->
+                <div class="bg-white p-4 relative rounded-lg grid grid-cols-12">
+                    <div class="col-span-9">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex items-center gap-2">
+                                    <img src="images/bus-logo.png" alt="bus logo">
+                                    <div>
+                                        <p class="text-2xl font-semibold">Greenline Paribahan</p>
+                                        <p class="text-sm">Coach-009-WEB ! AC_Business</p>
+                                    </div>
+                                </div>
+                                <!-- total seat available -->
+                                <button class="bg-green-100 rounded-[10px] px-4 flex items-center gap-2 text-green-500 py-2 mb-4">
+                                   <img src="images/seat-green.png" alt="seat image">
+                                   <span id="seat-remain">40</span> seats left
+                                </button>
+                            </div>
+                            <div class="bg-[#F7F8F8] p-4 rounded-lg">
+                                <div class=" flex py-4 justify-between border-b-2 w-full border-dashed">
+                                    <p>Route</p>
+                                    <p>Dhaka-Sylhet</p>
+                                </div>
+                                <div class=" flex py-4 justify-between border-b-2 w-full border-dashed">
+                                    <p>Departure Time</p>
+                                    <p>9:00 PM</p>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 py-4 ">
+                                    <div class="bg-[#0307120D] py-3 px-6 rounded-xl">Boarding Point - Laxmipur</div>
+                                    <div class="bg-[#0307120D] py-3 px-6 rounded-xl">
+                                        Dropping Point - Bogura
+                                    </div>
+                                    <div  class="bg-[#0307120D] py-3 px-6 rounded-xl">
+                                        Est. Time - 11 Hour
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-span-1 pl-12">
+                        <div class="flex flex-col justify-between items-center overflow-hidden"></div>
+                            <div class="absolute -top-5 bg-[#F7F8F8] w-10 h-10 rounded-full"></div>
+                            <div class="absolute border border-dashed border-green-500 top-0 h-[90%] overflow-hidden"></div>
+                            <div class="absolute -bottom-5 bg-[#F7F8F8] w-10 h-10 rounded-full"></div>
+                    </div>
+                    <div class="col-span-2 flex justify-center items-center">
+                        <div>
+                            <img src="images/fare.png" alt="taka logo">
+                            <p class="text-3xl font-semibold">550 Taka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buy ticket and seat booking -->
+                 <div class="grid grid-cols-12 bg-white px-4 py-5 gap-5">
+                    <div class="col-span-8 border-r-2 border-gray-400 border-dashed">
+                        <h4 class="text-3xl font-semibold py-3 border-b-2 border-dashed">Select your seat</h4>
+                        <div class="p-3 border-b-2 border-dashed flex items-center justify-between">
+                            <div class="flex gap-3">
+                                <img src="images/seat-gray.png" alt="gray seat logo">
+                                <p class="text-xl text-gray-600">Available</p>
+                            </div>
+                            <div class="flex gap-3">
+                                <img src="images/seat-green.png" alt="green seat logo">
+                                <p class="text-green-500 text-xl font-semibold">Selected</p>
+                            </div>
+                        </div>
+                        <section class="grid grid-cols-12 item-center gap-y-5 mr-20">
+                            <div class="col-span-1"></div>
+                            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                <p class="col-span-8"></p>
+                                <button class="bg-[#f7f8f8] btn col-span-2">
+                                    <img class="w-12" src="images/steering-removebg-preview.png" alt="steering icon">
+                                </button>
+                            </div>
+    
+                            <!-- row-1 -->
+                            <div id="grand-parent">
+                                <p class="col-span-1">A</p>
+                                <div id="a-block" class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button  class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">A1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">A2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">A3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">A4</button>
+                                </div>
+       
+                                <p class="col-span-1">B</p>
+                                <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">B1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">B2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">B3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">B4</button>
+                                </div>
+       
+                                <p class="col-span-1">C</p>
+                                <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">C1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">C2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">C3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">C4</button>
+                                </div>
+       
+                                <p class="col-span-1">D</p>
+                                <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">D1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">D2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">D3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">D4</button>
+                                </div>
+       
+                                <p class="col-span-1">E</p>
+                                <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">E1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">E2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">E3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">E4</button>
+                                </div>
+       
+                                <p class="col-span-1">F</p>
+                                <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">F1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">F2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">F3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">F4</button>
+                                </div>
+       
+                                <p class="col-span-1">G</p>
+                                <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">G1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">G2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">G3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">G4</button>
+                                </div>
+       
+                                <p class="col-span-1">H</p>
+                                <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">H1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">H2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">H3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">H4</button>
+                                </div>
+       
+                                <p class="col-span-1">I</p>
+                                <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">I1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">I2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">I3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">I4</button>
+                                </div>
+       
+                                <p class="col-span-1">J</p>
+                                <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">J1</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">J2</button>
+                                   <p class="col-span-2"></p>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">J3</button>
+                                   <button class="col-span-2 btn border-none bg-[#f7f8f8] btn-md hover:text-white">J4</button>
+                                </div>
+                            </div>
+                         </section>
+                    </div>
+                    <div class="col-span-4 px-4 py-5">
+                        <h3 class="text-3xl font-semibold py-3 border-b-2 border-dashed mb-3">Select your seat</h3>
+                        <section>
+                            <div class="bg-[#f7f8f8] p-4 rounded-xl mb-3">
+                                <h3 class="flex justify-between pb-3">
+                                    <p class="flex">
+                                        <span>Seat</span>
+                                        <span id="seat-booked" class="bg-green-400 w-4 h-4 flex justify-center items-center font-normal text-sm p-2 rounded-full text-white">0</span>
+                                    </p>
+                                    <p>class</p>
+                                    <p>price</p>
+                                </h3>
+                                <div class="border-b-2 border-dashed mb-3"></div>
+                                <ul id="seat-selected" class="space-y-5">
+                                    <h3 id="seatBookedTitle" class="text-3xl pb-3 font-semibold text-error text-center">No Seat Booked</h3>
+                                </ul>
+                                <div class="border-b-2 border-dashed mb-3"></div>
+                                <div class="flex text-xl font-semibold justify-between mb-3">
+                                    <p>Total price</p>
+                                    <p>
+                                        <span>BDT</span>
+                                        <span id="total-price">****</span>
+                                    </p>
+                                </div>
+                                <div class="border-b-2 border-dashed mb-3"></div>
+                                <div class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
+                                    <input disabled class="input w-full my-5" id="coupon-input" type="text" placeholder="Have a coupon">
+                                    <button class="btn" disabled id="apply-coupon">Apply</button>
+                                </div>
+                                <div class="flex text-xl font-semibold justify-between mb-3">
+                                    <p>Grand price</p>
+                                    <p>
+                                        <span>BDT</span>
+                                        <span>****</span>
+                                    </p>
+                                </div>
+                                <div class="border-b-2 border-dashed mb-3"></div>
+                            </div>
+                            <!-- form section -->
+                             <div class="my-5">
+                                <label class="form-control w-full my-3">
+                                    <div class="label">
+                                      <span class="label-text text-bold">Passenger Name*</span>
+                                    </div>
+                                    <input id="passenger-name" type="text" placeholder="Enter your Name" class="input input-bordered w-full" />
+                                </label>
+                                <label class="form-control w-full my-3">
+                                    <div class="label">
+                                      <span class="label-text text-bold">Phone Number*</span>
+                                    </div>
+                                    <input id="passenger-number" type="number" placeholder="Enter Phone Number" class="input input-bordered w-full" />
+                                </label>
+                                <label class="form-control w-full my-3">
+                                    <div class="label">
+                                      <span class="label-text text-bold">Email*</span>
+                                    </div>
+                                    <input id="passenger-email" type="email" placeholder="Enter your email" class="input input-bordered w-full" />
+                                </label>
+                                <button onclick="my_modal_1.showModal()"
+                                id="next-btn" class="btn bg-green-500 mt-5 text-lg text-white uppercase w-full">Next</button>
+
+                                <!-- Open the modal using ID.showModal() method -->
+                                
+                                <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box text-center">
+                                    <img class="w-[70px] mb-4 mx-auto" src="images/success.png" alt="success icon">
+                                    <h3 class="text-lg font-bold">Success</h3>
+                                    <p class="py-4"><span class="font-semibold block">
+                                        Thank you for Booking Our Bus Seats. 
+                                        We are working hard to find the best service and deals for you.
+                                    </span> 
+                                        Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action justify-center">
+                                    <form method="dialog">
+                                        <button class="btn w-[270px] rounded-3xl bg-green-400 text-white">Continue</button>
+                                    </form>
+                                    </div>
+                                </div>
+                                </dialog>
+                                <div class="flex justify-between mt-5">
+                                    <a class="underline font-semibold hover:text-green-500 transition-colors duration-200 ease-in-out" href="#">terms and conditions</a>
+                                    <a class="underline font-semibold hover:text-green-500 transition-colors duration-200 ease-in-out" href="#">cancellation policy</a>
+                                </div>
+                             </div>
+                        </section>
+                    </div>
+                    <!-- seat section -->
+
+                 </div>
+            </div>
+          </div>
+           
     </main>
     <footer></footer>
     <script src="js/index.js"></script>
