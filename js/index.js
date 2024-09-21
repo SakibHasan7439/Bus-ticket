@@ -59,12 +59,23 @@ grandParent.addEventListener("click", (event)=>{
         priceCount += 550;
         totalPrice.innerText = priceCount.toFixed(2);
 
-        if(passengerName.value !== "" && passengerPhone.value !== ""){
-            console.log("not empty");
-            nextBtn.disabled = false;
+        function validateForm() {
+            // Check if both name and phone fields are not empty
+            if (passengerName.value !== "" && passengerPhone.value.length === 11) {
+                nextBtn.removeAttribute("disabled");  // Enable submit button
+            } else {
+                nextBtn.setAttribute("disabled", true); // Keep button disabled
+            }
         }
+        
+        // Attach event listeners to each input to trigger validation as the user types
+        passengerName.addEventListener('input', validateForm);
+        passengerPhone.addEventListener('input', validateForm);
 
     }
 
 })
 
+document.getElementById("continueBtn").addEventListener("click", ()=>{
+    location.reload();
+})
