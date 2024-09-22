@@ -1,18 +1,18 @@
 // all required elements id
-let totalSeatBooked = document.getElementById("seat-booked");
-const totalPrice = document.getElementById("total-price");
-const couponInput = document.getElementById("coupon-input");
-const applyCouponBtn = document.getElementById("apply-coupon");
-const applyCouponInput = document.getElementById("coupon-input");
-const seatSelected = document.getElementById("seat-selected");
-const grandParent = document.getElementById("grand-parent");
-const remainSeat = document.getElementById("seat-remain");
-const defaultText = document.getElementById("seatBookedTitle");
-const grandPrice = document.getElementById("grand-price");
+let totalSeatBooked = getElementById("seat-booked");
+const totalPrice = getElementById("total-price");
+const couponInput = getElementById("coupon-input");
+const applyCouponBtn = getElementById("apply-coupon");
+const applyCouponInput = getElementById("coupon-input");
+const seatSelected = getElementById("seat-selected");
+const grandParent = getElementById("grand-parent");
+const remainSeat = getElementById("seat-remain");
+const defaultText = getElementById("seatBookedTitle");
+const grandPrice = getElementById("grand-price");
 
-const nextBtn = document.getElementById("next-btn");
-const passengerName = document.getElementById("passenger-name");
-const passengerPhone = document.getElementById("passenger-number");
+const nextBtn = getElementById("next-btn");
+const passengerName = getElementById("passenger-name");
+const passengerPhone = getElementById("passenger-number");
 
 
 let priceCount = 0;
@@ -60,15 +60,14 @@ grandParent.addEventListener("click", (event)=>{
         totalPrice.innerText = priceCount.toFixed(2);
 
         function validateForm() {
-            // Check if both name and phone fields are not empty
+            
             if (passengerName.value !== "" && passengerPhone.value.length === 11) {
-                nextBtn.removeAttribute("disabled");  // Enable submit button
+                nextBtn.removeAttribute("disabled"); 
             } else {
-                nextBtn.setAttribute("disabled", true); // Keep button disabled
+                nextBtn.setAttribute("disabled", true); 
             }
         }
         
-        // Attach event listeners to each input to trigger validation as the user types
         passengerName.addEventListener('input', validateForm);
         passengerPhone.addEventListener('input', validateForm);
 
